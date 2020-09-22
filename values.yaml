@@ -1,0 +1,14 @@
+port: 80
+replicas: 1
+
+memory: 128M
+cpu: 200m #(200 millicpu)
+
+
+image:
+  repository: nginx
+  tag: latest
+
+healthcheck:
+  endpoint: /
+  port: 80
